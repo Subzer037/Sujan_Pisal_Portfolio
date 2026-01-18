@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SUBZERO | Cyber Operations Console</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome (Cyber Icons) -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<button id="scrollToTop" title="Return to Top">
+    <i class="fa-solid fa-chevron-up"></i>
+    <span class="btn-text">TOP</span>
+</button>
+
+<body>
+
+<!-- MATRIX BACKGROUND -->
+<canvas id="matrix"></canvas>
+
+<!-- HEADER -->
+<header class="top-bar">
+    <div class="brand">
+        <h1>SUBZERO</h1>
+        <span>CYBER DEFENSE | SOC | THREAT ANALYSIS</span>
+    </div>
+    <div class="status">
+        <span class="dot"></span> OPERATION STATUS: ACTIVE
+    </div>
+</header>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+    <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="#summary"><i class="fa-solid fa-address-card"></i> Summary</a>
+    <a href="#skills"><i class="fa-solid fa-user-shield"></i>Skills</a>
+    <a href="#certs"><i class="fa-solid fa-certificate"></i> Certifications</a>
+    <a href="#experience"><i class="fa-solid fa-network-wired"></i> Experience</a>
+</aside>
+
+<!-- MAIN CONTENT -->
+<main class="content">
+
+    <!-- HOME -->
+    <section id="home" class="panel home">
+        <div class="profile">
+            <!-- PROFILE PHOTO PLACEHOLDER -->
+            <img src="passport.jpg" alt="Profile Photo">
+        </div>
+
+        <div class="intro">
+            <h2>&gt; SUJAN PISAL</h2>
+            <p class="typing">
+Initializing cyber defense profile...<br>
+Identity verified: SUBZERO<br>
+Role: Cybersecurity Professional
+            </p>
+
+            <div class="links">
+                <a href="https://linkedin.com/in/spisal" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/Subzer037" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="" target="_blank"><i class="fa-solid fa-briefcase"></i> Indeed</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="documents" class="panel">
+    <h2><i class="fa-solid fa-file-invoice"></i> RESUME</h2>
+    <p style="margin-bottom: 20px; font-size: 0.9rem;">
+
+    </p>
+    
+    <div class="cta-container">
+        <a href="resume/Sujan_Pisal_CV.pdf" target="_blank" class="cyber-btn">
+            <i class="fas fa-file-pdf"></i> VIEW_RESUME
+        </a>
+        <a href="CoverLetter_Sujan_Pisal.pdf" download class="cyber-btn outline">
+            <i class="fas fa-download"></i> DOWNLOAD_COVER_LETTER
+        </a>
+    </div>
+</section>
+
+    <!-- SUMMARY -->
+    <section id="summary" class="panel">
+        <h2><i class="fa-solid fa-address-card"></i> PROFESSIONAL SUMMARY</h2>
+        <p> I am a Cybersecurity Professional with hands-on experience in vulnerability assessment, penetration testing, SOC analysis, network defense, API security, and red/blue team simulations. With a solid    technical foundation in network security, cloud security fundamentals, OWASP Top 10 (2025), threat modeling, and scripting (Python & Bash), I focus on strengthening security posture through proactive defense and analytical thinking. During my internship and academic projects, I gained practical skills using tools such as Burp Suite, Nmap, Metasploit, Wireshark, Splunk, OSINT Framework, and Cisco Packet Tracer, enabling me detect, analyze, and mitigate security threats effectively. I enjoy solving real-world security challenges and continuously learning new tools, attack vectors, and defense mechanisms. I am currently seeking opportunities in:
+                <li>Cybersecurity Analyst</li>
+                <li>SOC Analyst (L1)</li>
+                <li>Junior Penetration Tester</li>
+                <li>Network Security Engineer (Entry-Level)</li>
+                <li>Red Team / Blue Team Intern</li>
+            If your organization is looking for a motivated entry-level cybersecurity professional who brings strong technical skills,curiosity, and a passion for learning—let’s connect
+            </p>
+    </section>
+
+
+    <!-- SKILLS -->
+<section id="skills" class="panel">
+    <h2><i class="fa-solid fa-microchip"></i> SKILLS_MATRIX</h2>
+
+    <div class="skills-card-grid">
+        <div class="skill-category-card">
+            <h4><i class="fa-solid fa-brain"></i> Core Areas</h4>
+            <ul>
+                <li>Bug Bounty Hunting</li>
+                <li>Web & API Security Testing</li>
+                <li>Vulnerability Assessment</li>
+                <li>OWASP Top 10 (2025)</li>
+                <li>Threat Modeling</li>
+            </ul>
+        </div>
+
+        <div class="skill-category-card">
+            <h4><i class="fa-solid fa-server"></i> OS & Platforms</h4>
+            <ul>
+                <li>Kali Linux / Parrot OS</li>
+                <li>Ubuntu Server</li>
+                <li>Windows Security</li>
+                <li>Burp Collaborator</li>
+                <li>Active Directory Basics</li>
+            </ul>
+        </div>
+
+        <div class="skill-category-card">
+            <h4><i class="fa-solid fa-search"></i> Recon Tools</h4>
+            <ul>
+                <li>Subfinder / Amass</li>
+                <li>Shodan / Censys</li>
+                <li>Assetfinder / Gau</li>
+                <li>Katana / Waybackurls</li>
+            </ul>
+        </div>
+
+        <div class="skill-category-card">
+            <h4><i class="fa-solid fa-radar"></i> Scanners</h4>
+            <ul>
+                <li>Nuclei (Custom Templates)</li>
+                <li>Nessus / OpenVAS</li>
+                <li>Nmap / Masscan</li>
+                <li>Dirsearch / FFUF</li>
+            </ul>
+        </div>
+
+        <div class="skill-category-card">
+            <h4><i class="fa-solid fa-biohazard"></i> Proxy & Exploitation</h4>
+            <ul>
+                <li>Burp Suite Professional</li>
+                <li>Metasploit Framework</li>
+                <li>SQLmap</li>
+                <li>XSStrike</li>
+            </ul>
+        </div>
+
+        <div class="skill-category-card">
+            <h4><i class="fa-solid fa-code"></i> Scripts & Languages</h4>
+            <ul>
+                <li>Python (Automation)</li>
+                <li>Bash Scripting</li>
+                <li>Markdown / HTML</li>
+                <li>C++ / Java (Foundations)</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+    <!-- CERTIFICATIONS -->
+   <section id="certs" class="panel">
+    <h2><i class="fa-solid fa-certificate"></i> CERTIFICATIONS</h2>
+
+    <div class="cert-gallery">
+
+        <div class="cert-card">
+            <div class="cert-img-container">
+                <img src="certifications/coursera.jpg" alt="Google Certificate">
+            </div>
+            <div class="cert-label">GOOGLE_CYBERSECURITY_PROFESSIONAL</div>
+            <div class="cert-info">
+                <h3>Google Cybersecurity</h3>
+                <p><strong>Issuer:</strong> Coursera</p>
+                <p>Vulnerability assessment and network security fundamentals.</p>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-img-container">
+                <img src="certifications/api-cert.jpg" alt="API Security">
+            </div>
+            <div class="cert-label">API_SECURITY_FUNDAMENTALS</div>
+            <div class="cert-info">
+                <h3>API Security Fundamentals</h3>
+                <p><strong>Issuer:</strong> APIsec University</p>
+                <p>OWASP API Top 10 and security best practices.</p>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-img-container">
+                <img src="certifications/splunk-cert.jpg" alt="Google Certificate">
+            </div>
+            <div class="cert-label">SPLUNK_FUNDAMENTALS_CERTIFIACTE</div>
+            <div class="cert-info">
+                <h3>Google Cybersecurity</h3>
+                <p><strong>Issuer:</strong> Coursera</p>
+                <p>Vulnerability assessment and network security fundamentals.</p>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-img-container">
+                <img src="certifications/THM-9T233YAB2R.jpg" alt="Google Certificate">
+            </div>
+            <div class="cert-label">TRY_HACK_ME_ADVENT_OF_CYBER_CERTIFICATE_2025</div>
+            <div class="cert-info">
+                <h3>Google Cybersecurity</h3>
+                <p><strong>Issuer:</strong> Coursera</p>
+                <p>Vulnerability assessment and network security fundamentals.</p>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-img-container">
+                <img src="certifications/ethical hacking.jpg" alt="Google Certificate">
+            </div>
+            <div class="cert-label">Ethical Hacking Certifiacte From BIA</div>
+            <div class="cert-info">
+                <h3>Google Cybersecurity</h3>
+                <p><strong>Issuer:</strong> Coursera</p>
+                <p>Vulnerability assessment and network security fundamentals.</p>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-img-container">
+                <img src="certifications/cyber security.jpg" alt="Google Certificate">
+            </div>
+            <div class="cert-label">Cyber Security Certifiacte From BIA</div>
+            <div class="cert-info">
+                <h3>Google Cybersecurity</h3>
+                <p><strong>Issuer:</strong> Coursera</p>
+                <p>Vulnerability assessment and network security fundamentals.</p>
+            </div>
+        </div>
+
+         <div class="cert-card">
+            <div class="cert-img-container">
+                <img src="certifications/udemy_certificate.jpg" alt="Google Certificate">
+            </div>
+            <div class="cert-label">Computer networking mastery</div>
+            <div class="cert-info">
+                <h3>Google Cybersecurity</h3>
+                <p><strong>Issuer:</strong> Coursera</p>
+                <p>Vulnerability assessment and network security fundamentals.</p>
+            </div>
+        </div>
+
+        </div>
+</section>
+</section>
+
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="panel">
+        <h2><i class="fa-solid fa-server"></i> EXPERIENCE LOG</h2>
+
+        <div class="log">
+            <h3>Cybersecurity Intern – DCDIUM Technologies</h3>
+            <p>
+                ▸ Vulnerability scanning (Nessus, Nmap)<br>
+                ▸ SOC monitoring & incident handling<br>
+                ▸ Exploitation validation (Metasploit)<br>
+                ▸ Secure network design (Cisco Packet Tracer)
+            </p>
+        </div>
+
+        <div class="log">
+            <h3>Network Support Analyst - Spectram Telecommunications</h3>
+            <p>
+                ▸ Network monitoring & troubleshooting<br>
+                ▸ Incident tracking & SLA compliance<br>
+                ▸ Traffic analysis & anomaly detection
+            </p>
+        </div>
+    </section>
+
+</main>
+<!-- FULL SCREEN CERTIFICATE PREVIEW -->
+<div id="cert-preview">
+    <img id="preview-img" src="" alt="Certificate Preview">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
