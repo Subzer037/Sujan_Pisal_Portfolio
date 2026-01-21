@@ -60,7 +60,9 @@ function drawMatrix() {
         drops[i]++;
     });
 }
-setInterval(drawMatrix, 50);
+if (window.innerWidth > 768) {
+    setInterval(drawMatrix, 50);
+}
 
 const scrollBtn = document.getElementById("scrollToTop");
 
