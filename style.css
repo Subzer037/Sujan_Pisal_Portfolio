@@ -331,9 +331,15 @@ span,
     text-align: center;
     border-top: 1px solid #00ffe1;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
+
+    /* 🔧 FIX */
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.4;
 }
+
 
 /* ADJUST CARD TO VERTICAL LAYOUT */
 .cert-card {
@@ -723,6 +729,35 @@ span,
         font-size: 0.95rem;
         line-height: 1.7;
     }
+
+}
+
+@media (max-width: 768px) {
+
+  .panel {
+    padding: 16px;
+  }
+
+  .cert-card,
+  .skill-category-card,
+  .project-card-v2 {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .cert-label {
+    font-size: 0.75rem;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .cert-info p,
+  .project-details li,
+  .summary-text,
+  .summary-cta {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
 }
 
     /* Sidebar becomes top bar */
@@ -811,4 +846,26 @@ li::before {
     color: #b6fefe;
 }
 
+/* === MOBILE OVERFLOW FIX (GLOBAL) === */
+* {
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
 
+@media (max-width: 768px) {
+
+  .links a,
+  .cyber-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+pre, code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 100%;
+}
